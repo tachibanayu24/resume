@@ -1,10 +1,15 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "resume.tachibanayu24.com",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
   },
-  "author": "tachibanayu24",
-  "license": "ISC"
+  "dependencies": {
+    "hono": "^4.6.14",
+    "marked": "^15.0.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "wrangler": "^3.88.0"
+  }
 }
