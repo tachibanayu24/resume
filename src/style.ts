@@ -21,13 +21,6 @@ export  const styles = `
     }
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0.5rem;
-    align-items: center;
-  }
-
   h1 {
     background-color: #93c5fd;
     padding-left: 0.25rem;
@@ -75,6 +68,14 @@ export  const styles = `
     background-color: #eff6ff;
   }
 
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   button {
     border: none;
     margin: 0 0.25rem;
@@ -83,5 +84,16 @@ export  const styles = `
     background-color: #e2e8f0;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .error {
+    color: red;
   }
 `
